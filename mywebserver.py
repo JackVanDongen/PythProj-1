@@ -9,5 +9,9 @@ def hello():
 def info():
 	return "This the response to the info page request"
 
+@app.route("/status")
+def info():
+	return "This the response to the status page request"
+
 if __name__ == "__main__": 
 	app.run(host="0.0.0.0", port=80, debug=True)
